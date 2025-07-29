@@ -1,6 +1,5 @@
 plugins {
 	id 'java'
-	id 'war' // Apply the WAR plugin
 	id 'org.springframework.boot' version '3.3.3'
 	id 'io.spring.dependency-management' version '1.1.6'
 }
@@ -35,10 +34,6 @@ dependencies {
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-}
-
-tasks.named('bootWar') {
-    enabled = true // Enable the bootWar task
 }
 
 tasks.named('test') {
