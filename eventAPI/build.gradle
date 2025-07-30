@@ -41,18 +41,18 @@ dependencies {
     useJUnitPlatform()
     description = "Runs the unit tests."
     group = "verification"
-    
+ */   
     // Customize the include pattern for your unit tests if needed
-    include '**/*ApplicationTest.class'
+  /*  include '**/*ApplicationTest.class'
 }
 
 tasks.register('apiTest', Test) {
     useJUnitPlatform()
     description = "Runs the API (Cucumber) tests."
     group = "verification"
-
+*/
     // Ensure this includes only the Cucumber runner class
-    include '**/RunCucumberTest.class'
+/*    include '**/RunCucumberTest.class'
 }
 
 tasks.named("test") {
