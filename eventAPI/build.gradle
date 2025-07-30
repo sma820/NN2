@@ -37,7 +37,7 @@ dependencies {
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
 
-tasks.register('unitTest', Test) {
+/* tasks.register('unitTest', Test) {
     useJUnitPlatform()
     description = "Runs the unit tests."
     group = "verification"
@@ -66,4 +66,10 @@ tasks.withType(Test).configureEach {
         showStandardStreams = true  // Show standard output and error during the tests
     }
 }
+*/
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
 
